@@ -1,0 +1,21 @@
+// Inicio our-team
+
+.our-team{
+    display: flex;
+    flex-direction: column;
+    h2{
+        margin: 1em 0;
+        padding: 0 1em;
+        text-align: start;
+    }
+    .our-team-img{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }   
+}
+
+// Fin our-team

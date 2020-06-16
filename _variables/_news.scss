@@ -1,0 +1,42 @@
+// Inicio News
+
+@import '../_variables/mixins';
+@import '../_variables/colors';
+
+.novedades{
+    @include flexCenter();
+    flex-direction: column;
+    padding-top: 5em;
+    text-align: center;
+    margin: 1em;
+    color: #ffffff;
+    button{
+        @include buttonMaster();
+        padding: 1em;
+    }
+    button:hover{
+        @include buttonHover();
+
+    }
+    .novedades-bg{
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        background-image: $linearGradient;
+        transform: skew(0deg, -6deg);
+        transform-origin: 0% 5%;
+        z-index: -1;
+        font-family: 'Special Elite', cursive;
+    }
+    .novedades-bg2{
+        position: absolute;
+        width: 100%;
+        height: 25%;
+        background-color: #0000A3;
+        transform: skew(0deg, 0deg);
+        z-index: -2;
+        font-family: 'Special Elite', cursive;
+    }
+}
+
+// Fin news

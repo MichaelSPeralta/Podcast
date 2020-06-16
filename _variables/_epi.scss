@@ -1,0 +1,32 @@
+// Inicio episodes
+.epi{
+    color: #fff;
+    padding: 1.9em 0;
+    h2{
+        padding: 1em 0;
+    }
+    clip-path: polygon(0 4%, 100% 0%, 100% 96%, 0% 100%);
+    background: $linearGradient;
+    z-index: -1;
+    font-family: 'Special Elite', cursive;
+    padding: 3em 0;
+    .epi-bg {
+        padding: 2em;
+    }
+    .epi-cont{
+        padding: 1em;
+        animation: slideEpi 3s ease;
+    }
+
+}
+
+@keyframes slideEpi{
+    from{
+        transform: translateX(-500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+// Fin episodes

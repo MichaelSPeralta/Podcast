@@ -1,0 +1,25 @@
+// Inicio about-us
+.about-us{
+    display: flex;
+    flex-direction: column;
+    animation: slide 2s ease;
+
+    img{
+        width: 100%;
+    }
+    transform: translateY(-6em);
+    padding: 0 1em;
+    .abus-cont{
+        transform: translateY(4em);
+    }
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    
+    to{
+        transform: translateX(-250);
+    }
+}
+// Fin about-us

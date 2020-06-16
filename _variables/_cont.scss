@@ -1,0 +1,36 @@
+// Inicio cont
+
+@import '../_variables/mixins';
+
+.cont{
+    @include flexCenter();
+    flex-direction: column;
+    padding: 1em;
+    animation: opacityCont 3s ease ;
+    h1{
+        padding-bottom: .5em;
+        align-self: flex-start;
+        font-size: 36px;
+    }
+
+    button{
+        @include buttonMaster();
+    }
+    button:hover{
+        @include buttonHover();
+
+    }
+}
+
+@keyframes opacityCont{
+    from{
+        opacity: 0;
+        // transform: translateY(500px);
+    }
+    to{
+        opacity: 100;
+        // transform: translateY(0px);
+    }
+}
+
+// Fin cont

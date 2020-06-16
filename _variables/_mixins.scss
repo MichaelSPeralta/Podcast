@@ -1,0 +1,29 @@
+// Inicio mixins
+
+@import '../_variables/colors';
+
+@mixin flexCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonMaster{
+    margin: 1em;
+    padding: 1em 4em;
+    width: 100%;
+    background-color: $buttonColor;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    color: #000000;
+    cursor: pointer;
+}
+
+@mixin buttonHover{
+    background: $buttonHover;
+    color: #ffffff;
+}
+
+// Fin mixins

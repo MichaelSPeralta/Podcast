@@ -1,0 +1,301 @@
+
+@import '../_variables/header';
+@import '../_variables/cont';
+@import '../_variables/epi';
+@import '../_variables/about-us';
+@import '../_variables/footer';
+@import '../_variables/for-listen';
+@import '../_variables/news';
+@import '../_variables/our-team';
+@import '../_variables/mixins';
+@import '../_variables/colors';
+
+// Inicio estilos generales
+*{   
+      font-family: 'Cinzel', 'IBM Plex Sans', serif;
+      margin: 0;
+      padding: 0;
+}
+body{
+    h1, h2{
+        font-family: 'IBM Plex Sans', serif;
+        letter-spacing: 2px;
+    }
+    // line-height: 1.5em;
+    a{
+        text-decoration: none;
+        font-size: 16px;
+    }
+    a:hover{
+        color: $aHover;
+    }
+    p{
+        font-size: 16px;
+    }
+    iframe{
+        width: 100%;  
+        height:232px;  
+        border: 0;                   
+        background-color: transparent;
+        border-width: 0em;
+    }
+}
+
+// Fin estilos generales
+
+// Inicio Media Queries
+
+@media only screen and (min-width: 375px){
+    .header{
+        .collapsible-menu{
+            .menu-content{
+                padding: 0 75% 0 0;
+              }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 1em;
+        padding: 0;
+     //    text-align: center;
+     .header-logo{
+         position: relative;
+         margin: 0;
+         width: 36px;
+         height: auto;
+        //  img{
+        //      width: 3em;
+        //      height: auto;
+        //  } 
+     }
+     .collapsible-menu{
+         display: inline-block;
+         // text-align: center;
+         flex-grow: 0;
+
+         label{
+             display: none;
+             // background-image: none;
+           }  
+         .menu-content{
+             display:inline;
+             // text-align: end;
+             // max-height: 100%;
+             padding: 0;
+             background-color: #ffffff;
+             ul{
+                 li{
+                     display: inline-block;
+                     padding: 0 1em;
+                 }
+                 a{
+                     color: #000000;
+                     font-size: 16px;
+                 }
+             }
+         }
+     }    
+ }
+ .cont{
+    display: inline-block;
+    margin: 1em 3em;
+    h1, p{
+        text-align: start;  
+        
+    }
+    p{
+        padding-right: 10em;
+    }
+    button{
+        margin: 1em 1em 1em 0;
+        padding: 1em 2em;
+        width: 30%;
+    }
+    h1{
+        font-size: 64px; 
+
+    }
+}
+}
+
+@media only screen and (min-width: 950px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em 3em;
+        padding: 0;
+     //    text-align: center;
+     .header-logo{
+         margin: 0;
+         img{
+             width: 3em;
+             height: auto;
+         } 
+     }
+     .collapsible-menu{
+         display: inline-block;
+         // text-align: center;
+
+         label{
+             display: none;
+             // background-image: none;
+           }  
+         .menu-content{
+             display:inline;
+             // text-align: end;
+             // max-height: 100%;
+             padding: 0;
+             background-color: #ffffff;
+             ul{
+                 li{
+                     display: inline-block;
+                     padding: 0 1em;
+                 }
+                 a{
+                     color: #000000;
+                     font-size: 16px;
+                 }
+             }
+         }
+     }    
+ }
+   
+    .cont{
+        display: inline-block;
+        margin: 1em 9em;
+        h1, p{
+            text-align: start;  
+            
+        }
+        p{
+            padding-right: 10em;
+        }
+        button{
+            margin: 1em 1em 1em 0;
+            padding: 1em 2em;
+            width: 30%;
+        }
+        h1{
+            font-size: 64px; 
+
+        }
+    }
+    .epi{
+        margin: 0;
+        // padding: 0 4em;
+        h2{
+            text-align: start;
+            padding: 1em 3em;
+        }
+
+        iframe{
+            padding: 1em;
+            width: 45%;
+        }
+    }
+    .about-us{
+        margin: 0 6em;
+        padding: 0 1em;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+        // transform: translateY(-4em);
+        img{
+            width: 200%;
+            height: auto;
+        }
+        .abus-cont{
+            margin: 9em 0 0 0;
+            margin-left: 9em;
+            padding: 0 0 4em 4em;
+            
+            p{
+                font-size: .8em;
+            }
+        }
+    }
+    .our-team{
+        h2{
+            margin: 1em 3em;
+            padding: 0 2em;
+        }
+        .our-team-img{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            img{
+                width: 33.33333%;
+                height: auto;
+            }
+        }   
+    }
+    .for-listen{
+        margin: 3em 4em;
+        padding: 0;
+        h2{
+            padding: 0 2em ;
+        }
+        .for-listen-cont{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            padding: 2em 0;
+            ul{
+                display: flex;
+                flex-direction: row;
+                text-align: center;
+                li{
+                    padding: 1em;
+                }
+            }
+        }
+    }
+    .novedades{
+        button{
+            margin: 1em 1em 1em 0;
+            padding: 1em 2em;
+            width: 30%;
+        }
+    }
+    .footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 3em 6em 0em 6em;
+
+            .copyright{
+                padding: 2em 0 0 0;
+            }
+            .social-media{
+                padding: 2em 0 0 0;
+            }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+}
+
+@media only screen and (min-width: 1133px) {
+    .about-us{
+        .abus-cont{
+            margin: 25em 0 0 12em;
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-us{
+        .abus-cont{
+            margin: 35em 0 0 19em;
+        }
+    }
+}
+
+// Fin Media Queries

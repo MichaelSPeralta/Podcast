@@ -1,0 +1,19 @@
+// Inicio main
+
+@import '../_variables/mixins';
+
+.main{
+    @include flexCenter();
+    flex-direction: column;
+
+    h1{
+        padding-bottom: .5em;
+        align-self: flex-start;
+    }
+
+    button{
+        @include buttonMaster();
+    }
+}
+
+// Fin main
